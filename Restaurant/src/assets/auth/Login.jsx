@@ -1,4 +1,4 @@
-import './auth/Login.css'
+import './Login.css'
 
 export default function Login() {
   
