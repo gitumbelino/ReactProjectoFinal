@@ -1,7 +1,7 @@
-export async function updatePlaces(userPlaces) {
-    const response = await fetch("http://localhost:3000/user-places", {
+export async function updateDishes(userDishes) {
+    const response = await fetch("http://localhost:3000/menu", {
       method: "PUT",
-      body: JSON.stringify({ places: userPlaces }),
+      body: JSON.stringify({ places: userDishes }),
       headers: {
         "Content-Type": "application/json",
       },

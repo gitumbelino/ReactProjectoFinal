@@ -8,10 +8,11 @@ export default function Navbar() {
       <div className="topnav-content">
         <div className="brand">
           <GrRestaurant className="logo-icon" />
-          <a href="#home" className="active">ReactRestaurant</a>
+          <a href="./" className="active">ReactRestaurant</a>
         </div>
-        <a href="#news">Pratos</a>
-        <a href="#contact">Staff</a>
+        <a href="/menu">Menu</a>
+        <a href="/login">Staff </a>
+        <a href="/register">Novo registo</a>
       </div>
     </div>
   );

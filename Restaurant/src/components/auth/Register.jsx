@@ -2,8 +2,8 @@ export default function Signup() {
  
     return (
       <form>
-        <h2>Welcome on board!</h2>
-        <p>We just need a little bit of data from you to get you started 🚀</p>
+        <h2>React Restaurant</h2>
+        <p>Register</p>
   
         <div className="control">
           <label htmlFor="email">Email</label>
@@ -42,13 +42,10 @@ export default function Signup() {
         </div>
   
         <div className="control">
-          <label htmlFor="phone">What best describes your role?</label>
+          <label htmlFor="phone">Profile type</label>
           <select id="role" name="role" required>
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-            <option value="employee">Employee</option>
-            <option value="founder">Founder</option>
-            <option value="other">Other</option>
+            <option value="student">Staff</option>
+            <option value="teacher">Customer</option>
           </select>
         </div>
         <div className="control">

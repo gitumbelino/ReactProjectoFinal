@@ -5,11 +5,11 @@ import Footer from "../footer/footer.jsx";
 
 
 export default function LayoutMaster() {
-  return (<>
+  return (<div className="background-master">
 
     <Navbar />
-    
+    <Outlet/>
     <Footer />
 
-  </>)
+  </div>)
 }

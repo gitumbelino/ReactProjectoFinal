@@ -9,11 +9,7 @@ export default function HomePage(){
     return(  
     <div>
         {message && <div>{message}</div>}
-        <h5>As Minhas Funcionalidades</h5>
-        <ul>
-            <li><Link to="/register">Register</Link></li>
-            <li><Link to="/login">Login</Link></li>
-        </ul>
+        <h2>Bem-vindo!</h2>
     </div>);
 
 }

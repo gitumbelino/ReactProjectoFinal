@@ -1,0 +1,27 @@
+[
+  {
+    "email": "manager@react.com",
+    "password": "password1234",
+    "firstName": "Alice",
+    "lastName": "Marques",
+    "role": "Manager",
+    "termsAccepted": true
+  },
+  {
+    "email": "staff@react.com",
+    "password": "password1234",
+    "firstName": "João",
+    "lastName": "Henriques",
+    "role": "student",
+    "termsAccepted": true
+  },
+  {
+    "email": "guest@react.com",
+    "password": "password1234",
+    "firstName": "Joana",
+    "lastName": "Silva",
+    "role": "customer",
+    "termsAccepted": true
+  }
+
+]

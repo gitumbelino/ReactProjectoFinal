@@ -1,16 +1,13 @@
 import { useState } from 'react'
-import LayoutMaster from './assets/layoutmaster/LayoutMaster.jsx'
+import LayoutMaster from './components/layoutmaster/LayoutMaster.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ErrorPage from './assets/errorpage/ErrorPage.jsx'
+import ErrorPage from './components/errorpage/ErrorPage.jsx'
 import HomePage from './pages/HomePage.jsx'
-import Signup from './assets/auth/Register.jsx'
-import Login from './assets/auth/Login.jsx'
+import Signup from './components/auth/Register.jsx'
+import Login from './components/auth/Login.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx';
-
-
+import AvailableDishes from './pages/HomePage.jsx'
+import './App.css'
 
 
 const router = createBrowserRouter([
@@ -21,6 +18,7 @@ const router = createBrowserRouter([
       {path: '/', element: <HomePage/>},
       {path: '/register', element: <Signup/>},
       {path: '/login', element: <Login/>},
+      {path: '/menu', element: <AvailableDishes/>},
     ]
   },
  
