@@ -1,0 +1,57 @@
+Objectivo:
+Pretende-se que crie uma nova aplicação react com as seguintes 
+características: aplicação para gestão de um restaurante.
+
+==============================================================================================================
+
+Requisitos:
+➢
+Sistema de registo de users
+➢
+Página para gestor do restaurante: Deve haver uma página destinada ao gestor 
+do restauranre onde este insere na api 3 campos: entradas, prato principal, 
+sobremesas. A rota para acesso deve estar protegida ao role gestor.
+➢
+Consumidor: A aplicação deve carregar menu com os dados vindos da api e 
+permitir ao user selecionar os items que que e criar uma encomenda que a 
+cozinha irá visualizar. A rota para acesso deve estar protegida ao role consumidor.
+➢
+Cozinha: Na aplicação deve haver uma rota denominada à cozinha em que aparece 
+uma lista dos nomes da pessoa que faz o pedido e os items que lhe correspondem. 
+Na cozinha deve ser possível actualizar o estado dos pedidos para: em confecção 
+ou entregue.
+Notas:
+
+==============================================================================================================
+
+•
+O projecto vale 50% da notal final. (outros 50% participação em aula)
+Avaliação:
+•
+Gerar uma nova aplicação e configurar correctamente a mesma: 1V
+•
+Criar um layout master e aplica-lo às páginas: 1V
+•
+Utilizar componentes e props: 2v
+•
+Utilização de Hooks: 2v
+•
+Usar correctamente o sistema de rotas: 1.5v
+•
+Tratamento de formulários e respectivas validações: 1.5v
+•
+Criar um sistema de Autenticação: 1.5V
+•
+Utilizar protecção de rotas: 1.5V
+•
+Utilizar bloqueio por login de utilizador em certos elementos:1.5v
+•
+Uso do POST 1.5v
+•
+Uso do GET 1.5v
+•
+Uso do PUT 1.5v
+•
+Criatividade 1v
+•
+Acrescentar uma funcionalidade / outro extra não falada em Aula: 1V
