@@ -129,5 +129,72 @@
       "region": "Toscana",
        "src": "Baccalà alla Livornese.jpg",
       "alt": "Baccalà alla Livornese."
+    },
+
+    {
+      "id": 11,
+      "name": "Risotto ai Funghi Porcini",
+      "category": "Primi",
+      "description": "Risotto cremoso con funghi porcini freschi, vino bianco e parmigiano",
+      "englishDescription": "Creamy risotto with fresh porcini mushrooms, white wine and parmesan cheese",
+      "price": 18.50,
+      "ingredients": ["Riso Carnaroli", "Funghi porcini", "Vino bianco", "Brodo vegetale", "Parmigiano", "Cipolla", "Burro"],
+      "allergens": ["Latte", "Solfiti"],
+      "region": "Lombardia",
+      "src": "Risotto ai Funghi Porcini.jpg",
+      "alt": "Risotto ai Funghi Porcini."
+    },
+    {
+      "id": 12,
+      "name": "Gnocchi al Gorgonzola",
+      "category": "Primi",
+      "description": "Gnocchi di patate fatti in casa con crema di gorgonzola e noci tostate",
+      "englishDescription": "Homemade potato gnocchi with gorgonzola cheese cream sauce and toasted walnuts",
+      "price": 16.00,
+      "ingredients": ["Patate", "Farina", "Gorgonzola", "Panna", "Noci", "Burro", "Salvia"],
+      "allergens": ["Glutine", "Latte", "Frutta a guscio"],
+      "region": "Piemonte",
+      "src": "Gnocchi al Gorgonzola.jpg",
+      "alt": "Gnocchi al Gorgonzola."
+    },
+    {
+      "id": 13,
+      "name": "Trofie al Pesto",
+      "category": "Primi",
+      "description": "Pasta trofie con autentico pesto genovese, patate e fagiolini",
+      "englishDescription": "Trofie pasta with authentic Genoese pesto, potatoes and green beans",
+      "price": 15.50,
+      "ingredients": ["Pasta trofie", "Basilico", "Pinoli", "Parmigiano", "Pecorino", "Aglio", "Patate", "Fagiolini", "Olio d'oliva"],
+      "allergens": ["Glutine", "Latte", "Frutta a guscio"],
+      "region": "Liguria",
+      "src": "Trofie al Pesto.jpg",
+      "alt": "Trofie al Pesto."
+    },
+
+    {
+      "id": 14,
+      "name": "Tiramisù",
+      "category": "Dolci",
+      "description": "Classico dolce italiano con strati di savoiardi inzuppati nel caffè, mascarpone e cacao",
+      "englishDescription": "Classic Italian dessert with layers of coffee-soaked ladyfingers, mascarpone cream and cocoa powder",
+      "price": 8.50,
+      "ingredients": ["Savoiardi", "Mascarpone", "Caffè", "Uova", "Zucchero", "Cacao in polvere"],
+      "allergens": ["Glutine", "Latte", "Uova"],
+      "region": "Veneto",
+      "src": "Tiramisu.jpg",
+      "alt": "Tiramisù."
+    },
+    {
+      "id": 15,
+      "name": "Panna Cotta",
+      "category": "Dolci",
+      "description": "Delicato dolce a base di panna cotta con salsa di frutti di bosco freschi",
+      "englishDescription": "Delicate cooked cream dessert with fresh mixed berry sauce",
+      "price": 7.50,
+      "ingredients": ["Panna", "Zucchero", "Vaniglia", "Gelatina", "Frutti di bosco", "Menta"],
+      "allergens": ["Latte"],
+      "region": "Piemonte",
+      "src": "Panna Cotta.jpg",
+      "alt": "Panna Cotta."
     }
   ]

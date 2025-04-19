@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage.jsx'
 import Signup from './components/auth/Register.jsx'
 import Login from './components/auth/Login.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx';
-import AvailableDishes from './pages/HomePage.jsx'
+import AvailableDishes from './pages/MenuIndex.jsx'
 import './App.css'
 
 

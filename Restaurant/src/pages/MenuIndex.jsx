@@ -2,6 +2,7 @@ import Dishes from '../components/menu/Dishes'
 import { useEffect, useState,useRef, useCallback } from 'react';
 import { updateDishes } from '../https';
 
+
 export default function AvailableDishes() {
   const [AvailableDishes, setDishes] = useState(null);
   const [UserDishes, setUserDishes] = useState([]);
@@ -9,7 +10,7 @@ export default function AvailableDishes() {
 
   
   useEffect(() => {
-    fetch("http://localhost:3000/places")
+    fetch("http://localhost:3000/dishes")
       .then((response) => response.json())
       .then((resData) => {
         setDishes(resData.dishes);
@@ -55,7 +56,7 @@ export default function AvailableDishes() {
     <div>
       <h1>Menu</h1>
       <p>
-        Choose the dishes you would like to order.
+        What would you like to order?
       </p>
     </div>
     <main>

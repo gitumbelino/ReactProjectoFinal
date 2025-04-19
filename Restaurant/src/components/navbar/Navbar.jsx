@@ -1,6 +1,8 @@
 import React from 'react';
 import { GrRestaurant } from "react-icons/gr";
 import './Navbar.css'
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   return (
@@ -8,11 +10,11 @@ export default function Navbar() {
       <div className="topnav-content">
         <div className="brand">
           <GrRestaurant className="logo-icon" />
-          <a href="./" className="active">ReactRestaurant</a>
+          <h1>ReactRestaurant</h1>
         </div>
-        <a href="/menu">Menu</a>
-        <a href="/login">Staff </a>
-        <a href="/register">Novo registo</a>
+        <Link to="/menu">Menu</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link>
       </div>
     </div>
   );

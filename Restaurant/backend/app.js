@@ -14,28 +14,29 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/places", async (req, res) => {
-  const fileContent = await fs.readFile("./data/places.json");
-  const placesData = JSON.parse(fileContent);
-  res.status(200).json({ places: placesData });
+
+app.get("/dishes", async (req, res) => {
+  const fileContent = await fs.readFile("./data/menu.json");
+  const dishesData = JSON.parse(fileContent);
+  res.status(200).json({ dishes: dishesData });
 });
 
-app.get("/user-places", async (req, res) => {
-  const fileContent = await fs.readFile("./data/user-places.json");
-  const places = JSON.parse(fileContent);
-  res.status(200).json({ places });
+app.get("/user-dishes", async (req, res) => {
+  const fileContent = await fs.readFile("./data/user-dishes.json");
+  const dishes = JSON.parse(fileContent);
+  res.status(200).json({ dishes });
+});
+
+app.put("/user-dishes", async (req, res) => {
+  const dishes = req.body.dishes;
+  await fs.writeFile("./data/user-dishes.json", JSON.stringify(dishes));
+  res.status(200).json({ message: "User dishes updated!" });
 });
 
 app.get("/users", async (req, res) => {
   const fileContent = await fs.readFile("./data/users.json");
   const users = JSON.parse(fileContent);
   res.status(200).json({ users });
-});
-
-app.put("/user-places", async (req, res) => {
-  const places = req.body.places;
-  await fs.writeFile("./data/user-places.json", JSON.stringify(places));
-  res.status(200).json({ message: "User places updated!" });
 });
 
 //rotas de users
