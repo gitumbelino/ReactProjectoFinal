@@ -8,6 +8,7 @@ import Login from './components/auth/Login.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx';
 import AvailableDishes from './pages/MenuIndex.jsx'
 import './App.css'
+import Logout from './components/auth/Logout.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,10 +16,11 @@ const router = createBrowserRouter([
     element: <LayoutMaster/>,
     errorElement: <ErrorPage/>,
     children:[
-      {path: '/', element: <HomePage/>},
+      {path: '/home', element: <HomePage/>},
       {path: '/register', element: <Signup/>},
       {path: '/login', element: <Login/>},
       {path: '/menu', element: <AvailableDishes/>},
+      {path: '/logout', element: <Logout/>}
     ]
   },
  

@@ -3,14 +3,8 @@ body {
   padding: 0;
 }
 
-h1{
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-}
-
 .topnav {
-  background: rgb(126, 126, 70);
+  background-color: rgb(126, 126, 70);
   width: 100%;
   position: fixed;
   top: 0;
@@ -28,7 +22,6 @@ h1{
 .brand {
   display: flex;
   align-items: center;
-  margin-right: 24px;
 }
 
 .logo-icon {
@@ -46,7 +39,7 @@ h1{
 
 
 .topnav a:hover {
-  background-color: rgb(126, 126, 70);
+
   color: black;
 }
 

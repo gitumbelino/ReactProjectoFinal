@@ -4,7 +4,7 @@
     "password": "password1234",
     "firstName": "Alice",
     "lastName": "Marques",
-    "role": "Manager",
+    "role": "manager",
     "termsAccepted": true
   },
   {
@@ -12,7 +12,7 @@
     "password": "password1234",
     "firstName": "João",
     "lastName": "Henriques",
-    "role": "student",
+    "role": "staff",
     "termsAccepted": true
   },
   {
