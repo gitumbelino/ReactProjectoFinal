@@ -1,23 +1,15 @@
 :root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    height: 100vh;
-    overflow: hidden;
-  }
-  .footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-  }
+.footer {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  
+}

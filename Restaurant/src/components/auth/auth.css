@@ -1,0 +1,133 @@
+form {
+    
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(180deg, #253c3c, #1d4949);
+    border-radius: 8px;
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+    color: #f5f5f5;
+   
+}
+
+.control,
+fieldset {
+    margin-bottom: 1.5rem;
+    width: 100%; 
+}
+
+.control.no-margin {
+    margin-bottom: 0.5rem;
+}
+
+.control label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: #c5d1d1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.control input,
+.control select {
+    display: block;
+    width: 100%; 
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #5a6e6e;
+    background-color: #7d8f8f;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.control input:focus,
+.control select:focus {
+    outline: none;
+    border-color: #9ec3c3;
+    background-color: #6d8383;
+}
+
+/* Checkbox styling */
+.control:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+}
+
+.control:has(input[type="checkbox"]) label {
+    margin: 0;
+    text-transform: none;
+    font-size: 0.9rem;
+    color: #c5d1d1;
+    flex: 1; 
+}
+
+.control input[type="checkbox"] {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    min-width: 1.2rem;
+    margin-right: 0.8rem;
+    border-radius: 3px;
+    background-color: #7d8f8f;
+    cursor: pointer;
+}
+
+.control-error {
+    color: #ff9e7d;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+}
+
+.control-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%; 
+}
+
+
+.control-row .control {
+    flex: 1;
+    min-width: 0; 
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4a7777;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #5a9191;
+}
+
+h2 {
+    color: #c5d1d1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #5a6e6e;
+    margin: 1.5rem 0;
+    width: 100%;
+}
