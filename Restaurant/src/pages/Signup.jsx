@@ -1,47 +1,54 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './auth.css'
+import '../components/auth/auth.css';
 
 export default function Signup() {
-    const [passwordNotEqual, setPasswordsAreNotEqual] = useState(false);
-    const navigate = useNavigate();
+  
+  const [passwordNotEqual, setPasswordsAreNotEqual] = useState(false);
+  const navigate = useNavigate();
 
-     function handleSubmit(event){
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        const data = Object.fromEntries(formData.entries());
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
 
-        if (data.password != data.confirmPassword) {
-            setPasswordsAreNotEqual(true);
-            return;
-        }else{
-            setPasswordsAreNotEqual(false);
-        }
-
-        const user = {
-            email: data.email,
-            password: data.password,
-            firstName: data["first-name"],
-            lastName: data["last-name"],
-            role: data.role,
-            termsAccepted: data.terms === "on",
-          };
-        
-        fetch("http://localhost:3000/signup", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(user),
-        });
-
-        navigate("/", {state: {message: "User inserido com sucesso!"}});
-      
+    if (data.password != data.confirmPassword) {
+      setPasswordsAreNotEqual(true);
+      return;
     }
 
+    const user = {
+      email: data.email,
+      password: data.password,
+      firstName: data["first-name"],
+      lastName: data["last-name"],
+      role: data.role,
+      termsAccepted: data.terms === "on",
+    };
 
+    fetch("http://localhost:3000/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(user),
+    })
+    .then(response => {
+      if (response.ok) {
+        navigate("/", {
+          state: { message: "User successfully registered!" },
+        });
+      } else {
+        throw new Error("Registration failed");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("Registration failed. Please try again.");
+    });
+  }
     return (
       <form onSubmit={handleSubmit}>
-        <h2>Welcome on board!</h2>
-        <p>We just need a little bit of data from you to get you started 🚀</p>
+        <h2>React Restaurant</h2>
+        <p>Register</p>
   
         <div className="control">
           <label htmlFor="email">Email</label>
@@ -61,7 +68,6 @@ export default function Signup() {
               name="confirmPassword"
               required
             />
-            {passwordNotEqual && <p>As passwords não coincidem</p>}
           </div>
         </div>
   
@@ -81,13 +87,10 @@ export default function Signup() {
         </div>
   
         <div className="control">
-          <label htmlFor="phone">What best describes your role?</label>
+          <label htmlFor="phone">Profile type</label>
           <select id="role" name="role" required>
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-            <option value="employee">Employee</option>
-            <option value="founder">Founder</option>
-            <option value="other">Other</option>
+            <option value="student">Staff</option>
+            <option value="teacher">Customer</option>
           </select>
         </div>
         <div className="control">

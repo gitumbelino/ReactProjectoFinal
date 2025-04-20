@@ -3,7 +3,7 @@ import LayoutMaster from './components/layoutmaster/LayoutMaster.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './components/errorpage/ErrorPage.jsx'
 import HomePage from './pages/HomePage.jsx'
-import Signup from './components/auth/Register.jsx'
+import Signup from './pages/Signup.jsx'
 import Login from './components/auth/Login.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx';
 import AvailableDishes from './pages/MenuIndex.jsx'
